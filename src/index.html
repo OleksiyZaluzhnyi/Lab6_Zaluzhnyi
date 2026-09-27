@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Зміна кольору фону сторінки</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="d-flex flex-column align-items-center justify-content-center min-vh-100">
+
+<main class="card p-4 shadow-sm text-center card-custom">
+    <h1 class="h3 mb-3">Зміна фону сторінки</h1>
+    <p class="text-muted mb-4">Введіть назву кольору словом або HEX-код</p>
+
+    <div class="mb-3">
+        <input
+                type="text"
+                id="colorInput"
+                class="form-control text-center"
+                placeholder="Наприклад: coral, teal або #ff9900"
+        >
+        <div id="errorMessage" class="error-message mt-2 d-none">
+            Некоректний колір! Спробуйте іншу назву.
+        </div>
+    </div>
+
+    <div class="d-flex gap-2 justify-content-center mb-4">
+        <button id="changeColorBtn" class="btn btn-primary">Змінити фон</button>
+        <button id="resetColorBtn" class="btn btn-outline-secondary">Скинути</button>
+    </div>
+
+    <div class="presets-section">
+        <span class="d-block text-muted small mb-2">Готові кольори:</span>
+        <div class="d-flex flex-wrap gap-2 justify-content-center" id="presetContainer">
+            <button type="button" class="btn btn-sm btn-light preset-btn" data-color="coral">coral</button>
+            <button type="button" class="btn btn-sm btn-light preset-btn" data-color="skyblue">skyblue</button>
+            <button type="button" class="btn btn-sm btn-light preset-btn" data-color="lavender">lavender</button>
+            <button type="button" class="btn btn-sm btn-light preset-btn" data-color="gold">gold</button>
+            <button type="button" class="btn btn-sm btn-light preset-btn" data-color="teal">teal</button>
+            <button type="button" class="btn btn-sm btn-light preset-btn" data-color="plum">plum</button>
+        </div>
+    </div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

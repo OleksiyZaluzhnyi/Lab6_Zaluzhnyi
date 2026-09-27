@@ -1,0 +1,29 @@
+body {
+    background-color: #f8f9fa;
+    transition: background-color 0.4s ease-in-out;
+}
+
+.card-custom {
+    max-width: 440px;
+    width: 90%;
+    border-radius: 12px;
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.preset-btn {
+    border: 1px solid #dee2e6;
+    font-weight: 500;
+    text-transform: lowercase;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.preset-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
+}
+
+.error-message {
+    color: #dc3545;
+    font-size: 0.875rem;
+}
